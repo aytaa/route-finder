@@ -23,7 +23,7 @@ Kütüphaneyi kullanmak için aşağıdaki örneği kullanabilirsiniz:
 ```javascript
 const locationRouteLibrary = require('@unalayta/route-finder');
 
-locationRouteLibrary.findRoute('New York', 'Los Angeles', (route) => {
+locationRouteLibrary.findRoute('New York', 'Los Angeles', apiKey, (route) => {
   console.log(route);
 });
 ```
