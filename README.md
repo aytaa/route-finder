@@ -23,8 +23,8 @@ Kütüphaneyi kullanmak için aşağıdaki örneği kullanabilirsiniz:
 ```javascript
 const locationRouteLibrary = require('@unalayta/route-finder');
 
-locationRouteLibrary.findRoute('New York', 'Los Angeles', (route) => {
-  console.log(route);
+locationRouteLibrary.findRoute('New York', 'Los Angeles', apiKey,  (route) => {
+    console.log(route);
 });
 ```
 Bu kod, "New York" ve "Los Angeles" arasındaki rotayı hesaplar
