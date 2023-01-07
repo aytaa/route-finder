@@ -4,7 +4,7 @@
     "dotenv": "^16.0.3"
   },
   "name": "@unalayta/route-finder",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "main": "index.js",
   "scripts": {
     "test": "node test"
@@ -15,12 +15,12 @@
   },
   "keywords": [],
   "author": "Aytaç Ünal",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/aytaa/route-finder/issues"
   },
   "homepage": "https://github.com/aytaa/route-finder#readme",
-  "description": ""
+  "description": "Bu kütüphane, Google Maps API kullanarak iki konum arasındaki rotayı hesaplar. Kütüphane, node.js projelerinde kullanılabilecek bir JavaScript modülüdür."
 }
 
 
