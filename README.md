@@ -1,3 +1,4 @@
+[![Build Status](https://app.travis-ci.com/aytaa/route-finder.svg?branch=master)](https://app.travis-ci.com/aytaa/route-finder)
 
 # Konum Rota Kütüphanesi
 
