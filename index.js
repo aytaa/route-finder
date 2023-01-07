@@ -1,11 +1,14 @@
 const {createClient} = require('@google/maps');
 require('dotenv').config()
 
-// Google Maps API anahtarını buraya yazın
-const mapsClient = createClient({key: process.env.API_KEY });
+// Google Maps API anahtarını değişkenden alın
+const apiKey = process.env.API_KEY;
+
+// Google Maps API client'ı oluşturun
+const mapsClient = createClient({ key: apiKey });
 
 // Rota bulma fonksiyonu
-function findRoute(origin, destination, callback) {
+function findRoute(origin, destination, apiKey, callback) {
     mapsClient.directions({
         origin: origin,
         destination: destination,

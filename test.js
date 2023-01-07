@@ -1,5 +1,8 @@
-const myLibrary = require('./index');
+const locationRouteLibrary = require('./index');
 
-myLibrary.findRoute('New York', 'Los Angeles', (route) => {
+// Google Maps API anahtarını değişkenden alın
+const apiKey = process.env.API_KEY;
+
+locationRouteLibrary.findRoute('New York', 'Los Angeles', apiKey, (route) => {
     console.log(route);
 });
