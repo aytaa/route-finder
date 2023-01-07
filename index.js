@@ -7,7 +7,7 @@ const apiKey = process.env.API_KEY;
 // Google Maps API client'ı oluşturun
 const mapsClient = createClient({ key: apiKey });
 
-// Rota bulma fonksiyonu
+// Rota bulma fonksiyonu değişti.
 function findRoute(origin, destination, apiKey, callback) {
     mapsClient.directions({
         origin: origin,
