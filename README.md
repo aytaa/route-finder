@@ -23,8 +23,11 @@ Kütüphaneyi kullanmak için aşağıdaki örneği kullanabilirsiniz:
 ```javascript
 const locationRouteLibrary = require('@unalayta/route-finder');
 
-locationRouteLibrary.findRoute('New York', 'Los Angeles', apiKey,  (route) => {
-    console.log(route);
+// Google Maps API anahtarını değişkenden alın
+const apiKey = process.env.API_KEY;
+
+locationRouteLibrary.findRoute('New York', 'Los Angeles', apiKey, (route) => {
+  console.log(route);
 });
 ```
 Bu kod, "New York" ve "Los Angeles" arasındaki rotayı hesaplar
