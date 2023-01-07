@@ -7,7 +7,7 @@
   "version": "2.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "test": "mocha --exit --recursive"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,10 @@
     "url": "https://github.com/aytaa/route-finder/issues"
   },
   "homepage": "https://github.com/aytaa/route-finder#readme",
-  "description": "Bu kütüphane, Google Maps API kullanarak iki konum arasındaki rotayı hesaplar. Kütüphane, node.js projelerinde kullanılabilecek bir JavaScript modülüdür."
+  "description": "Bu kütüphane, Google Maps API kullanarak iki konum arasındaki rotayı hesaplar. Kütüphane, node.js projelerinde kullanılabilecek bir JavaScript modülüdür.",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^10.2.0"
+  }
 }
-
-
-
