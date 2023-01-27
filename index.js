@@ -12,6 +12,8 @@ function findRoute(origin, destination, apiKey, callback) {
     mapsClient.directions({
         origin: origin,
         destination: destination,
+        traffic_model: 'pessimistic',
+        departure_time: 'now',
     }, (err, response) => {
         if (err) {
             console.error(err);
