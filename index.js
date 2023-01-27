@@ -8,11 +8,11 @@ const apiKey = process.env.API_KEY;
 const mapsClient = createClient({ key: apiKey });
 
 // Rota bulma fonksiyonu değişti.
-function findRoute(origin, destination, apiKey, callback) {
+function findRoute(origin, destination, apiKey, traffic_model ,callback) {
     mapsClient.directions({
         origin: origin,
         destination: destination,
-        traffic_model: 'pessimistic',
+        traffic_model: traffic_model,
         departure_time: 'now',
     }, (err, response) => {
         if (err) {
